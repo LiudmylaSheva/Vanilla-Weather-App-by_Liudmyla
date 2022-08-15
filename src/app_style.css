@@ -1,0 +1,136 @@
+body {
+	background: linear-gradient(
+		213deg,
+		rgb(215, 168, 110) 0%,
+		rgb(255, 235, 193) 100%
+	);
+	background-attachment: fixed;
+}
+
+#city {
+	font-size: 35px;
+}
+
+p {
+	color: #8e3200;
+	font-family: "Gloria Hallelujah", cursive;
+}
+
+footer {
+	text-align: center;
+	font-size: 20px;
+	font-family: Consolas;
+	color: #8e3200;
+	font-weight: bold;
+}
+
+span {
+	font-size: 24px;
+}
+
+.weather-body {
+	border: 4px rgba(142, 50, 0, 0.3);
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 20px 40px;
+	background: linear-gradient(
+		76deg,
+		rgb(215, 168, 110) 0%,
+		rgb(166, 75, 42) 100%
+	);
+	border-radius: 15px;
+	box-shadow: 14px 19px 27px 4px rgba(0, 0, 0, 0.1);
+	font-family: "Oxygen Mono", monospace;
+}
+
+.cities {
+	font-family: "Gloria Hallelujah", cursive;
+	color: #8e3200;
+	font-size: 25px;
+	border-radius: 6px;
+	padding: 0 20px 0 7px;
+	box-shadow: 19px -6px 44px 9px rgba(142, 50, 0, 0.3);
+	max-width: 50%;
+}
+
+.nav-search {
+	size: 16px;
+}
+
+.day {
+	font-weight: bold;
+}
+
+#date-line {
+	font-size: 25px;
+	font-family: Consolas;
+	text-align: center;
+	color: #ffebc1;
+}
+
+.button-search,
+.button-current {
+	background-color: #8e3200;
+	padding: 2px 10px 2px 10px;
+	border-radius: 5px;
+	border: solid 1px #8e3200;
+	color: #ffebc1;
+	transition: all 200ms ease-in-out;
+}
+
+.button-search:hover,
+.button-current:hover {
+	background-color: #d7a86e;
+	color: #8e3200;
+}
+
+.tablet {
+	border-radius: 6px;
+	padding-bottom: 20px;
+	box-shadow: 19px -6px 44px 9px rgba(142, 50, 0, 0.3);
+}
+
+.clock {
+	display: block;
+	margin: 0 auto;
+	max-width: 250px;
+}
+
+.data-search {
+	text-decoration: none;
+	color: #8e3200;
+	transition: 200ms ease-in-out;
+}
+
+.data-search:hover {
+	color: #ffebc1;
+}
+
+.city-stripe,
+.city-1,
+.city-2,
+.city-3,
+.city-4,
+.city-5,
+.city-6,
+.open-source {
+	text-decoration: none;
+	color: #8e3200;
+	transition: 200ms ease-in-out;
+}
+
+.city-stripe:hover,
+.city-1:hover,
+.city-2:hover,
+.city-3:hover,
+.city-4:hover,
+.city-5:hover,
+.city-6:hover,
+.open-source:hover {
+	color: #ffebc1;
+}
+
+.open-source {
+	text-decoration: underline;
+}
