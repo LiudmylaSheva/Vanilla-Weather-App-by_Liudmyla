@@ -21,27 +21,72 @@
 		<div class="weather-body">
 			<div class="cities">
 				<span class="city-stripe"> <a href="#" class="city-1"> Lviv</a> </span>
-				<i class="fa-solid fa-location-dot"></i>
+				<span> <i class="fa-solid fa-location-dot"></i></span>
 				<span class="city-stripe"> <a href="#" class="city-2"> Kyiv</a> </span>
-				<i class="fa-solid fa-location-dot"></i>
+				<span> <i class="fa-solid fa-location-dot"></i></span>
 				<span class="city-stripe"> <a href="#" class="city-3"> Dnipro</a></span>
-				<i class="fa-solid fa-location-dot"></i>
+				<span> <i class="fa-solid fa-location-dot"></i></span>
 				<span class="city-stripe">
 					<a href="#" class="city-4"> Kharkiv</a></span
 				>
-				<i class="fa-solid fa-location-dot"></i>
+				<span> <i class="fa-solid fa-location-dot"></i></span>
 				<span class="city-stripe"> <a href="#" class="city-5"> Odesa</a> </span>
-				<i class="fa-solid fa-location-dot"></i>
+				<span> <i class="fa-solid fa-location-dot"></i></span>
 				<span class="city-stripe">
 					<a href="#" class="city-6"> Kherson</a>
 				</span>
 			</div>
 			<hr />
-			<div class="search"></div>
+			<div class="search">
+				<form class="nav-search" id="nav-search">
+					<input
+						type="search"
+						autocomplete="off"
+						placeholder="Enter your city..."
+						class="city-search"
+						id="city-form"
+					/>
+					<input type="submit" value="◽Search◽" class="button-search" />
+					<button class="button-current">
+						Current Location
+						<i class="fa-solid fa-magnifying-glass-location"></i>
+					</button>
+				</form>
+			</div>
 			<hr />
-			<div class="container">
-				<div class="5-days"></div>
-				<div class="current"></div>
+			<div class="container row">
+				<div class="5-days row">
+					<div class="col-4 day">
+						Mon. <br />
+						<br />
+						20°C
+					</div>
+					<div class="col-4 day">
+						Tue. <br />
+						<br />
+						20°C
+					</div>
+					<div class="col-4 day">
+						Wed. <br />
+						<br />
+						21°C
+					</div>
+					<div class="col-4 day">
+						Thu. <br />
+						<br />
+						27°C
+					</div>
+					<div class="col-4 day">
+						Fri. <br />
+						<br />
+						25°C
+					</div>
+				</div>
+				<div class="current row">
+					<div class="current-city">Ivano-Frankivsk</div>
+					<hr />
+					<div class="database">Data</div>
+				</div>
 			</div>
 			<hr />
 			<footer>
