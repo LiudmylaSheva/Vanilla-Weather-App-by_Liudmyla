@@ -1,0 +1,21 @@
+body {
+	background-image: url("https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.weather-body {
+	border: 4px rgba(142, 50, 0, 0.3);
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 20px 40px;
+	background: linear-gradient(
+		76deg,
+		rgb(215, 168, 110) 0%,
+		rgb(166, 75, 42) 100%
+	);
+	border-radius: 15px;
+	box-shadow: 14px 19px 27px 4px rgba(0, 0, 0, 0.1);
+	font-family: "Oxygen Mono", monospace;
+}
