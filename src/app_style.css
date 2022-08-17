@@ -1,5 +1,5 @@
 body {
-	background-image: url("https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg");
+	/background-image: url("https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg");
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -20,9 +20,15 @@ footer {
 	font-family: "Oxygen Mono", monospace;
 }
 
-.current-city {
-	font-size: 28px;
+#date-line {
+	font-family: "Gloria Hallelujah", cursive;
 	text-align: center;
+}
+
+.current-city {
+	font-size: 20px;
+	text-align: center;
+	font-family: "Gloria Hallelujah", cursive;
 }
 
 .cities {
