@@ -4,6 +4,12 @@ body {
 	background-size: cover;
 }
 
+footer {
+	text-align: center;
+	font-family: Consolas;
+	font-weight: bold;
+}
+
 .weather-body {
 	border: 4px rgba(142, 50, 0, 0.3);
 	max-width: 650px;
@@ -14,13 +20,12 @@ body {
 	font-family: "Oxygen Mono", monospace;
 }
 
-footer {
-	text-align: center;
-	font-family: Consolas;
-	font-weight: bold;
-}
-
 .current-city {
 	font-size: 28px;
+	text-align: center;
+}
+
+.cities {
+	font-size: 20px;
 	text-align: center;
 }
