@@ -7,9 +7,20 @@ body {
 .weather-body {
 	border: 4px rgba(142, 50, 0, 0.3);
 	max-width: 650px;
-	margin: 130px auto;
+	margin: 80px auto;
 	padding: 30px 40px;
 	border-radius: 20px;
 	box-shadow: 0px 0px 29px 3px rgba(0, 0, 0, 0.3);
 	font-family: "Oxygen Mono", monospace;
+}
+
+footer {
+	text-align: center;
+	font-family: Consolas;
+	font-weight: bold;
+}
+
+.current-city {
+	font-size: 28px;
+	text-align: center;
 }
