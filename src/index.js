@@ -41,6 +41,11 @@ function showDataSearch(response) {
 	humidity.innerHTML = response.data.main.humidity;
 	let currentSearchNow = document.querySelector(".current-city");
 	currentSearchNow.innerHTML = response.data.name;
+	let iconElement = document.querySelector("#icon");
+	iconElement.setAttribute(
+		"src",
+		`https://openweathermap.org/img/wn/01d@2x.png`
+	);
 }
 
 function citySearch(event) {
