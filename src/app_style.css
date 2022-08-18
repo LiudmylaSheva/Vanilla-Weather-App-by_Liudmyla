@@ -2,7 +2,7 @@ body {
 	background-image: url("https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg");
 	background-attachment: fixed;
 	background-size: cover;
-	color: black;
+	color: #0e1937;
 }
 
 footer {
@@ -12,7 +12,7 @@ footer {
 }
 
 .weather-body {
-	border: 4px rgba(142, 50, 0, 0.3);
+	border: 4px rgba(0, 0, 0, 0.4);
 	max-width: 650px;
 	margin: 80px auto;
 	padding: 30px 40px;
@@ -41,4 +41,85 @@ footer {
 .cities {
 	font-size: 20px;
 	text-align: center;
+}
+
+.database {
+	font-size: 13px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.database-section {
+	display: block;
+	border: 0.5px #715c88;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+	margin: 4px;
+	border-radius: 2px;
+	transition: all 200ms ease-in-out;
+}
+
+.database-section:hover {
+	background-color: #c495b7;
+}
+
+#nav-search {
+	size: 16px;
+}
+
+.day {
+	font-weight: bold;
+}
+
+.button-search,
+.button-current {
+	background-color: #715c88;
+	padding: 2px 10px 2px 10px;
+	border-radius: 5px;
+	border: solid 1px #715c88;
+	color: #0e1937;
+	transition: all 200ms ease-in-out;
+}
+
+.button-search:hover,
+.button-current:hover {
+	background-color: #0e1937;
+	color: #715c88;
+}
+
+.data-search {
+	text-decoration: none;
+	color: #0e1937;
+	transition: 200ms ease-in-out;
+}
+
+.data-search:hover {
+	color: #715c88;
+}
+
+.city-stripe,
+.city-1,
+.city-2,
+.city-3,
+.city-4,
+.city-5,
+.city-6,
+.open-source {
+	text-decoration: none;
+	color: #0e1937;
+	transition: 150ms ease-in-out;
+}
+
+.city-stripe:hover,
+.city-1:hover,
+.city-2:hover,
+.city-3:hover,
+.city-4:hover,
+.city-5:hover,
+.city-6:hover,
+.open-source:hover {
+	color: #715c88;
+}
+
+.open-source {
+	text-decoration: underline;
 }
