@@ -123,3 +123,7 @@ footer {
 .open-source {
 	text-decoration: underline;
 }
+
+#status {
+	text-transform: capitalize;
+}

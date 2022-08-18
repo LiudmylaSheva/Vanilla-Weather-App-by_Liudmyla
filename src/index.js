@@ -33,7 +33,7 @@ function showDataSearch(response) {
 	let tempInSearCity = document.querySelector(".temp");
 	tempInSearCity.innerHTML = `${tempNow}`;
 	let status = document.querySelector("#status");
-	status.innerHTML = response.data.weather[0].main;
+	status.innerHTML = response.data.weather[0].description;
 	let windRound = Math.round(response.data.wind.speed);
 	let wind = document.querySelector("#wind");
 	wind.innerHTML = `${windRound}`;
@@ -66,7 +66,7 @@ function showYourLocationData(response) {
 	let tempInLocCity = document.querySelector(".temp");
 	tempInLocCity.innerHTML = `${tempLocNow}`;
 	let statusLoc = document.querySelector("#status");
-	statusLoc.innerHTML = response.data.weather[0].main;
+	statusLoc.innerHTML = response.data.weather[0].description;
 	let windRoundLoc = Math.round(response.data.wind.speed);
 	let windLoc = document.querySelector("#wind");
 	windLoc.innerHTML = `${windRoundLoc}`;
