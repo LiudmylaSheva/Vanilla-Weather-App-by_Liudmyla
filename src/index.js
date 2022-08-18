@@ -39,13 +39,13 @@ function showDataSearch(response) {
 	wind.innerHTML = `${windRound}`;
 	let humidity = document.querySelector("#humidity");
 	humidity.innerHTML = response.data.main.humidity;
-	let currentSearchNow = document.querySelector("#city");
+	let currentSearchNow = document.querySelector(".current-city");
 	currentSearchNow.innerHTML = response.data.name;
 }
 
 function citySearch(event) {
 	event.preventDefault();
-	let cityElement = document.querySelector("#city");
+	let cityElement = document.querySelector(".current-city");
 	let cityInput = document.querySelector("#city-form");
 
 	let currentSearch = cityInput.value;
@@ -72,7 +72,7 @@ function showYourLocationData(response) {
 	windLoc.innerHTML = `${windRoundLoc}`;
 	let humidityLoc = document.querySelector("#humidity");
 	humidityLoc.innerHTML = response.data.main.humidity;
-	let cityLoc = document.querySelector("#city");
+	let cityLoc = document.querySelector(".current-city");
 	cityLoc.innerHTML = response.data.name;
 }
 
