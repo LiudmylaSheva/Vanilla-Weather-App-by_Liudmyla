@@ -2,7 +2,7 @@ body {
 	background-image: url("https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg");
 	background-attachment: fixed;
 	background-size: cover;
-	color: #0d1b38;
+	color: black;
 }
 
 footer {
@@ -17,11 +17,11 @@ footer {
 	margin: 80px auto;
 	padding: 30px 40px;
 	border-radius: 20px;
-	box-shadow: 0px 0px 29px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 41px 5px rgba(0, 0, 0, 0.4);
 	font-family: "Oxygen Mono", monospace;
 	background: radial-gradient(
-		rgb(213, 167, 201, 0.5) 0%,
-		rgb(170, 131, 172, 0.5) 100%
+		rgb(213, 167, 201, 0.85) 0%,
+		rgb(170, 131, 172, 0.85) 100%
 	);
 }
 
@@ -34,8 +34,8 @@ footer {
 	font-size: 20px;
 	text-align: center;
 	font-family: "Gloria Hallelujah", cursive;
-	text-shadow: -5px 0px 5px rgba(0, 0, 0, 0.5);
-	color: #ffd4bb;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+	color: whitesmoke;
 }
 
 .cities {
