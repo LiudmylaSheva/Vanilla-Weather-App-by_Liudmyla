@@ -79,6 +79,12 @@ function showYourLocationData(response) {
 	humidityLoc.innerHTML = response.data.main.humidity;
 	let cityLoc = document.querySelector(".current-city");
 	cityLoc.innerHTML = response.data.name;
+	let iconElementNow = document.querySelector("#icon");
+	iconElementNow.setAttribute(
+		"src",
+		`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+	);
+	iconElementNow.setAttribute("alt", response.data.weather[0].description);
 }
 
 function showCurrentLocatio(position) {
