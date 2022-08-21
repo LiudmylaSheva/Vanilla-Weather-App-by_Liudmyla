@@ -18,6 +18,15 @@ img {
 	vertical-align: middle;
 }
 
+.units {
+	color: #0e1937;
+	text-decoration: none;
+	transition: all 200ms ease-in-out;
+}
+
+.units:hover {
+	color: #715c88;
+}
 .weather-body {
 	border: 4px rgba(0, 0, 0, 0.4);
 	max-width: 650px;
