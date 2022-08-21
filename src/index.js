@@ -70,6 +70,9 @@ function showYourLocationData(response) {
 	let tempLocNow = Math.round(response.data.main.temp);
 	let tempInLocCity = document.querySelector(".temp");
 	tempInLocCity.innerHTML = `${tempLocNow}`;
+	let tempLocNowF = (response.data.main.temp * 9) / 5 + 32;
+	let tempInLocCityF = document.querySelector("#currTemp");
+	tempInLocCityF.innerHTML = `${tempLocNowF}`;
 	let statusLoc = document.querySelector("#status");
 	statusLoc.innerHTML = response.data.weather[0].description;
 	let windRoundLoc = Math.round(response.data.wind.speed);
@@ -87,27 +90,6 @@ function showYourLocationData(response) {
 	iconElementNow.setAttribute("alt", response.data.weather[0].description);
 	celsiusTemp = tempLocNow;
 }
-
-function clickFahrenheitLink(event) {
-	event.preventDefault();
-	let tempElements = document.querySelector("#currTemp");
-	let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-	tempElements.innerHTML = Math.round(fahrenheitTemp);
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", clickFahrenheitLink);
-
-function clickCelsiusLink(event) {
-	event.preventDefault();
-	let tempElementC = document.querySelector("#currTemp");
-	tempElementC.innerHTML = Math.round(celsiusTemp);
-}
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", clickCelsiusLink);
-
-let celsiusTemp = null;
 
 function showCurrentLocatio(position) {
 	console.log(position.coords.latitude);
