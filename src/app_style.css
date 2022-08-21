@@ -12,9 +12,10 @@ footer {
 }
 
 img {
-	max-width: 70px;
-	max-height: 70px;
+	max-width: 65px;
+	max-height: 65px;
 	margin: 0 auto;
+	vertical-align: middle;
 }
 
 .weather-body {
@@ -49,6 +50,11 @@ img {
 	text-align: center;
 }
 
+.day {
+	font-weight: bold;
+	size: 13px;
+}
+
 .database {
 	font-size: 13px;
 	text-align: center;
@@ -70,10 +76,6 @@ img {
 
 #nav-search {
 	size: 16px;
-}
-
-.day {
-	font-weight: bold;
 }
 
 .button-search,

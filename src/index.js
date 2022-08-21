@@ -44,13 +44,12 @@ function showDataSearch(response) {
 	let iconElement = document.querySelector("#icon");
 	iconElement.setAttribute(
 		"src",
-		`https://openweathermap.org/img/wn/01d@2x.png`
+		`https://openweathermap.org/img/wn/${response.data.weather[0].icon}2x.png`
 	);
 }
 
 function citySearch(event) {
 	event.preventDefault();
-	let cityElement = document.querySelector(".current-city");
 	let cityInput = document.querySelector("#city-form");
 
 	let currentSearch = cityInput.value;

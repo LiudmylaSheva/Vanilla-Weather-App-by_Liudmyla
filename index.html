@@ -98,24 +98,24 @@
 							</span>
 							<i class="fa-solid fa-spinner fa-spin-pulse"></i>
 						</div>
-						<div class="col">
-							<img
-								src="https://openweathermap.org/img/wn/01d@2x.png"
-								class="col d-flex"
-								id="icon"
-							/>
-						</div>
 					</div>
 					<hr />
 					<div class="database">
 						<div class="row">
 							<div class="col database-section">
 								<span class="temp data-search"> ...</span>
-								<span class="units"> °C </span>
+								<span class="units"> °C </span> <span> │ </span>
+								<span class="units"> °F </span>
+								<br />
+								<br />
+								<span class="data-search" id="status">Today is...</span>
 							</div>
 							<div class="col database-section">
-								<span class="temp data-search"> ...</span>
-								<span class="units"> °F </span>
+								<img
+									src="https://openweathermap.org/img/wn/01d@2x.png"
+									class="col d-flex"
+									id="icon"
+								/>
 							</div>
 						</div>
 						<div class="row">
@@ -130,9 +130,7 @@
 								<span> % </span>
 							</div>
 						</div>
-						<div class="row database-section">
-							<span class="data-search" id="status">Today is...</span>
-						</div>
+						<div class="row database-section"></div>
 					</div>
 				</div>
 			</div>
