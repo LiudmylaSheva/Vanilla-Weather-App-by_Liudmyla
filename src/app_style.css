@@ -67,6 +67,10 @@ img {
 
 .forecast {
 	vertical-align: middle;
+	margin-bottom: 4px;
+}
+
+.messange {
 }
 
 .database {
