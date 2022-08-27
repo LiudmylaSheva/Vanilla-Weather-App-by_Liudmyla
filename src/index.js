@@ -27,6 +27,37 @@ function formatDate(date) {
 	return `${day}, ${hours}:${minutes}`;
 }
 
+function displayForecastDate() {
+	let forecastElement = document.querySelector("#forecast-desk");
+
+	let forecastHTML = "";
+
+	let daysWeather = ["Fri", "Sat", "Sun", "Mon"];
+	daysWeather.forEach(function (day) {
+		forecastHTML =
+			forecastHTML +
+			`
+		<div class="col day">
+			${day} <br />
+			<br />
+			<img
+			src="https://openweathermap.org/img/wn/01n@2x.png"
+			width="50"
+			/>
+			<br />
+			<br />
+			<span class="max-temp"> 20°C </span>
+			<br />
+			<br />
+			<span class="min-temp"> 20°C </span>
+		</div>
+	`;
+	});
+
+	forecastElement.innerHTML = forecastHTML;
+}
+displayForecastDate();
+
 function showDataSearch(response) {
 	console.log(response);
 	let tempNow = Math.round(response.data.main.temp);
