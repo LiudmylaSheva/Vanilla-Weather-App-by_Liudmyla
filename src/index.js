@@ -41,7 +41,7 @@ function displayForecastDate() {
 			${day} <br />
 			<br />
 			<img
-			src="https://openweathermap.org/img/wn/01n@2x.png"
+			src="https://openweathermap.org/img/wn/01d@2x.png"
 			width="50"
 			/>
 			<br />
