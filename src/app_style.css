@@ -70,6 +70,10 @@ img {
 	margin-bottom: 4px;
 }
 
+.min-temp {
+	opacity: 0.6;
+}
+
 .database {
 	font-size: 13px;
 	text-align: center;
