@@ -130,9 +130,6 @@ function showYourLocationData(response) {
 	let tempLocNow = Math.round(response.data.main.temp);
 	let tempInLocCity = document.querySelector(".temp");
 	tempInLocCity.innerHTML = `${tempLocNow}`;
-	let tempLocNowF = (response.data.main.temp * 9) / 5 + 32;
-	let tempInLocCityF = document.querySelector("#currTemp");
-	tempInLocCityF.innerHTML = `${tempLocNowF}`;
 	let statusLoc = document.querySelector("#status");
 	statusLoc.innerHTML = response.data.weather[0].description;
 	let windRoundLoc = Math.round(response.data.wind.speed);
