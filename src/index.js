@@ -74,6 +74,17 @@ function getForecast(coordinates) {
 	axios.get(apiUrl1).then(displayForecastDate);
 }
 
+function alertNull() {
+	let cityAlert = document.querySelector("#city-form");
+	let cityAlertMes = cityAlert.value;
+	if (cityAlertMes === "") {
+		alert("Oops! It seems that you forgot to type your city's name 😢");
+	}
+}
+
+let buttonS = document.querySelector(".button-search");
+buttonS.addEventListener("click", alertNull);
+
 function showDataSearch(response) {
 	console.log(response);
 	let tempNow = Math.round(response.data.main.temp);
