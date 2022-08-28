@@ -138,6 +138,8 @@ function showYourLocationData(response) {
 	);
 	iconElementNow.setAttribute("alt", response.data.weather[0].description);
 	celsiusTemp = tempLocNow;
+
+	getForecast(response.data.coord);
 }
 
 function showCurrentLocatio(position) {
